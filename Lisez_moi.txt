@@ -1,0 +1,24 @@
+Demo de sprite en Tkinter
+
+Livré une application M-V-C
+    avec boucle d'animation standard dans le controleur
+
+Controleur
+    crée Modele et Vue
+    boucle d'animation
+        appel au modele pour mise a jour
+        appel à la vue pour mise à jour
+        on répète après n millisecondes
+
+Vue
+   Bouton pour dialogue de choix de fichier
+   Canevas pour affichage des images
+
+Modèle
+    reçoit le nom et les images contenues dans le gif animé relié au fichier
+    dans un dictionnaire dont les clés sont les noms de fichiers des gifs,
+        on associe un objet animations
+            sait combien d'images dans la liste
+            dispose d'un indice pour indiquer quelle image afficher
+            incremante l'indice (ou le replace à 0) à chaque tour
+
